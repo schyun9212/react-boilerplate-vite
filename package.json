@@ -11,7 +11,9 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "style": "yarn format && yarn lint",
-    "style:fix": "yarn format:fix && yarn lint:fix"
+    "style:fix": "yarn format:fix && yarn lint:fix",
+    "storybook:start": "start-storybook -p 6006 -s public",
+    "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
