@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
+
     /* Projects */
     "incremental": true,
 
@@ -39,5 +41,5 @@
     /* Completeness */
     "skipLibCheck": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["src", "vite.config.ts"]
 }
