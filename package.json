@@ -19,6 +19,11 @@
     "swr": "^1.3.0"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-vite": "^0.1.28",
+    "@storybook/react": "^6.4.22",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
