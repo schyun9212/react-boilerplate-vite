@@ -39,7 +39,9 @@
     "noImplicitReturns": true,
 
     /* Completeness */
-    "skipLibCheck": true
+    "skipLibCheck": true,
+
+    "types": ["@emotion/core"]
   },
   "include": ["src"]
 }
