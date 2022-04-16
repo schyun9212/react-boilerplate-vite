@@ -61,6 +61,7 @@ module.exports = {
 
     // Import Warning
     "import/no-mutable-exports": "error",
+    "import/no-default-export": "error",
 
     // Import Style Guide
     "import/order": [

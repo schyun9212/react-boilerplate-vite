@@ -16,9 +16,9 @@
     "isolatedModules": false,
 
     /* Emit */
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
     "removeComments": true,
 
     /* Interop Constraints */
@@ -41,5 +41,5 @@
     /* Completeness */
     "skipLibCheck": true
   },
-  "include": ["src", "vite.config.ts"]
+  "include": ["src"]
 }

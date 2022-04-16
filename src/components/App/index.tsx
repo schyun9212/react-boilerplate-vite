@@ -1,8 +1,8 @@
 import { useState } from "react";
-import logo from "./logo.svg";
+import logo from "../../assets/logo.svg";
 import "./App.css";
 
-function App() {
+export function App() {
   const [count, setCount] = useState(0);
 
   return (
@@ -36,5 +36,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
