@@ -2,6 +2,7 @@ import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useState } from "react";
 import logo from "../../../assets/logo.svg";
+import { breakpoints } from "../../../styles/responsive";
 
 const Section = styled.section`
   textAlign: "center",
@@ -32,6 +33,9 @@ const P = styled.p({
 
 const Link = styled.a(({ theme }) => ({
   color: theme.colors.primary,
+  [breakpoints.down("md")]: {
+    color: "green",
+  },
 }));
 
 const spin = keyframes`
