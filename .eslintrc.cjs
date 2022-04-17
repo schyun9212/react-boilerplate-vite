@@ -73,7 +73,7 @@ module.exports = {
     "import/no-duplicates": "error",
 
     // Enable dev dependency usage
-    "import/no-extraneous-dependencies": ["error", { devDependencies: true, packageDir: __dirname }],
+    "import/no-extraneous-dependencies": ["error", { devDependencies: ["**/*.test.ts", "**/*.test.tsx"] }],
 
     // Enable import without extention
     "import/extensions": [

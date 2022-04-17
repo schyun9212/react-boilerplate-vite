@@ -41,7 +41,7 @@
     /* Completeness */
     "skipLibCheck": true,
 
-    "types": ["@emotion/core"]
+    "types": ["@emotion/core", "@types/jest"]
   },
   "include": ["src"]
 }
