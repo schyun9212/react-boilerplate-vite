@@ -106,9 +106,8 @@ module.exports = {
 
     // Use no-unused-vars for Typescript
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "error",
-
-    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
 
     // Class Definition
     "lines-between-class-members": ["error", "always", { exceptAfterSingleLine: true }],
@@ -128,12 +127,7 @@ module.exports = {
     "consistent-return": "off",
 
     // Output related options
-    "no-console": [
-      "warn",
-      {
-        allow: ["warn", "error"],
-      },
-    ],
+    "no-console": "warn",
     "no-alert": "error",
   },
   globals: {

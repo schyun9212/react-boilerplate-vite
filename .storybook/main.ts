@@ -1,9 +1,15 @@
 const react = require("@vitejs/plugin-react");
+const defaultViteConfig = require("../vite.config").default;
 
 module.exports = {
   framework: "@storybook/react",
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: ["@storybook/addon-a11y", "@storybook/addon-links", "@storybook/addon-essentials"],
+  addons: [
+    "@storybook/addon-a11y",
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/preset-create-react-app",
+  ],
   core: {
     builder: "@storybook/builder-vite",
   },
@@ -26,7 +32,8 @@ module.exports = {
         },
       })
     );
-
+    config.resolve.alias = defaultViteConfig.resolve.alias;
+    config.optimizeDeps.esbuildOptions = defaultViteConfig.optimizeDeps.esbuildOptions;
     return config;
   },
 };

@@ -1,16 +1,15 @@
-import { css, Global } from "@emotion/react";
+import { Global, css } from "@emotion/core";
+import { resetStyles } from "./reset";
 
 const styles = css`
+  ${resetStyles}
+
   body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-      "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  * {
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
   }
 `;
 

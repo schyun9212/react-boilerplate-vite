@@ -10,7 +10,7 @@
     "lib": ["ES5", "ES6", "ES7", "ESNext", "DOM"],
 
     /* Modules */
-    "module": "ES6",
+    "module": "ES2020",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
@@ -35,13 +35,19 @@
     "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
+    "exactOptionalPropertyTypes": false,
     "noImplicitReturns": true,
 
     /* Completeness */
     "skipLibCheck": true,
 
-    "types": ["@emotion/core", "@types/jest"]
+    "types": ["@emotion/core", "@types/jest"],
+
+    /* Path Alias */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"]
 }
