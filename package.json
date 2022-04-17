@@ -5,7 +5,15 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "test": "jest",
     "preview": "vite preview",
+    "version:patch": "yarn standard-version -r patch",
+    "version:minor": "yarn standard-version -r minor",
+    "version:major": "yarn standard-version -r major",
+    "version:prepatch": "yarn standard-version -r patch -t alpha-v",
+    "version:preminor": "yarn standard-version -r minor -t alpha-v",
+    "version:premajor": "yarn standard-version -r major -t alpah-v",
+    "version:prerelease": "yarn standard-version --prerelease alpha",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'",
     "format": "prettier --check .",
@@ -13,8 +21,7 @@
     "style": "yarn format && yarn lint",
     "style:fix": "yarn format:fix && yarn lint:fix",
     "storybook:start": "start-storybook -p 6006 -s public",
-    "storybook:build": "build-storybook -s public",
-    "test": "jest"
+    "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
