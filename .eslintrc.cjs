@@ -42,7 +42,6 @@ module.exports = {
     },
   ],
   rules: {
-    "import/prefer-default-export": "off",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-interface": "off",
 
@@ -62,7 +61,8 @@ module.exports = {
 
     // Import Warning
     "import/no-mutable-exports": "error",
-    "import/no-default-export": "error",
+    "import/prefer-default-export": "off",
+    // "import/no-default-export": "error",
 
     // Import Style Guide
     "import/order": [
@@ -73,7 +73,10 @@ module.exports = {
     "import/no-duplicates": "error",
 
     // Enable dev dependency usage
-    "import/no-extraneous-dependencies": ["error", { devDependencies: ["**/*.test.ts", "**/*.test.tsx"] }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { devDependencies: ["**/*.test.ts", "**/*.test.tsx", "**/*.stories.tsx"] },
+    ],
 
     // Enable import without extention
     "import/extensions": [
