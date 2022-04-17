@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useSetRecoilState } from "recoil";
-import { useToggle } from "../../../hooks/useToggle";
-import { themeAtom } from "../../../recoil/atom";
-import { themeCatalog } from "../../../styles/theme";
-import { ToggleSwitch } from "../../atoms/ToggleSwitch";
+import { ToggleSwitch } from "@vite-project/components/atoms/ToggleSwitch";
+import { useToggle } from "@vite-project/hooks/useToggle";
+import { themeAtom } from "@vite-project/recoil/atom";
+import { themeCatalog } from "@vite-project/styles/theme";
 
 export function ThemeToggleSwitch() {
   const [toggleState, toggle] = useToggle(false);

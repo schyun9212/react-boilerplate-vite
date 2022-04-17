@@ -13,4 +13,7 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: [{ find: "@vite-project", replacement: "/src" }],
+  },
 });

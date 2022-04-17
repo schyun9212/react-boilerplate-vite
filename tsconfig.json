@@ -41,7 +41,13 @@
     /* Completeness */
     "skipLibCheck": true,
 
-    "types": ["@emotion/core", "@types/jest"]
+    "types": ["@emotion/core", "@types/jest"],
+
+    /* Path Alias */
+    "baseUrl": ".",
+    "paths": {
+      "@vite-project/*": ["src/*"]
+    }
   },
   "include": ["src"]
 }

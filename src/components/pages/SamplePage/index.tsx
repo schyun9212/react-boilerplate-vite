@@ -1,9 +1,9 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useState } from "react";
-import logo from "../../../assets/logo.svg";
-import { breakpoints } from "../../../styles/responsive";
-import { ThemeToggleSwitch } from "../../organisms/ThemeToggleSwitch";
+import logo from "@vite-project/assets/logo.svg";
+import { ThemeToggleSwitch } from "@vite-project/components/organisms/ThemeToggleSwitch";
+import { breakpoints } from "@vite-project/styles/responsive";
 
 const Section = styled.section`
   textAlign: "center",
