@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { useState } from "react";
 import logo from "../../../assets/logo.svg";
 import { breakpoints } from "../../../styles/responsive";
+import { ThemeToggleSwitch } from "../../organisms/ThemeToggleSwitch";
 
 const Section = styled.section`
   textAlign: "center",
@@ -59,6 +60,9 @@ export function SamplePage() {
           <button type="button" onClick={() => setCount((c) => c + 1)}>
             count is: {count}
           </button>
+        </P>
+        <P>
+          <ThemeToggleSwitch />
         </P>
         <P>
           Edit <code>App.tsx</code> and save to test HMR updates.

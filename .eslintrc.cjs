@@ -44,6 +44,7 @@ module.exports = {
   rules: {
     "import/prefer-default-export": "off",
     "no-empty-function": "off",
+    "@typescript-eslint/no-empty-interface": "off",
 
     "padding-line-between-statements": [
       "error",
