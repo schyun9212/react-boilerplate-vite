@@ -1,4 +1,4 @@
-import { Global, css } from "@emotion/core";
+import { Global, css } from "@emotion/react";
 import { resetStyles } from "./reset";
 
 const styles = css`

@@ -24,8 +24,8 @@
     ]
   },
   "dependencies": {
-    "@emotion/core": "10.3.1",
     "@emotion/css": "^11.9.0",
+    "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.8.1",
     "classnames": "^2.3.1",
     "dexie": "^3.2.1",

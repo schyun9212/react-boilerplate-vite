@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
 
     /* Projects */
     "incremental": true,
@@ -41,7 +42,7 @@
     /* Completeness */
     "skipLibCheck": true,
 
-    "types": ["@emotion/core", "@types/jest"],
+    "types": ["@types/jest"],
 
     /* Path Alias */
     "baseUrl": ".",
