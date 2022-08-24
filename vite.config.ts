@@ -12,6 +12,7 @@ import checker from "vite-plugin-checker";
 // https://vitejs.dev/config/
 // eslint-disable-next-line import/no-default-export
 export default defineConfig({
+  server: { port: 3000 },
   plugins: [
     react({
       jsxImportSource: "@emotion/react",
@@ -25,6 +26,9 @@ export default defineConfig({
     alias: {
       "@": "/src",
       process: "process/browser",
+      stream: "stream-browserify",
+      http: "agent-base",
+      https: "agent-base",
     },
   },
   define: {
